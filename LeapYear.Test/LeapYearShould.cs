@@ -9,18 +9,10 @@ namespace LeapYear.Test {
         All years divisible by 4 but not by 100 ARE leap years (e.g., 2008, 2012, 2016),
         All years not divisible by 4 are NOT leap years (e.g. 2017, 2018, 2019).*/
 
-        [Test]
-        public void say_that_400_is_leap_year() {
-            var year = 400;
-
-            var isLeapYear = LeapYear.IsLeap(year);
-
-            isLeapYear.Should().BeTrue();
-        }
-
-        [Test]
-        public void say_that_2000_is_leap_year() {
-            var year = 2000;
+        [TestCase(400)]
+        [TestCase(2000)]
+        public void say_that_numbers_divisible_by_400_are_leap_years(int input) {
+            var year = input;
 
             var isLeapYear = LeapYear.IsLeap(year);
 
