@@ -1,7 +1,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace LeapYear.Business.Test {
+namespace LeapYear.Test {
     public class LeapYearShould {
 
         /*All years divisible by 400 ARE leap years (so, for example, 2000 was indeed a leap year),

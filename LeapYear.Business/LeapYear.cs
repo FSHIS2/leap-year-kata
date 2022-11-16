@@ -1,4 +1,4 @@
-﻿namespace LeapYear.Business {
+﻿namespace LeapYear {
     public class LeapYear {
 
         public static bool IsLeap(int year) {
