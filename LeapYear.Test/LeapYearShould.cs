@@ -13,11 +13,19 @@ namespace LeapYear.Business.Test {
         public void say_that_400_is_leap_year() {
             var year = 400;
 
-            LeapYear leapYear = new LeapYear();
-            var IsLeapYear = LeapYear.IsLeap(year);
+            var isLeapYear = LeapYear.IsLeap(year);
 
-            IsLeapYear.Should().BeTrue();
+            isLeapYear.Should().BeTrue();
         }
-        
+
+        [Test]
+        public void say_that_2000_is_leap_year() {
+            var year = 2000;
+
+            var isLeapYear = LeapYear.IsLeap(year);
+
+            isLeapYear.Should().BeTrue();
+        }
+
     }
 }
