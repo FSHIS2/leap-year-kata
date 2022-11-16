@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYear.Business", "LeapYear.Business\LeapYear.Business.csproj", "{6C533A39-16D8-4A47-9995-2F8296303D9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeapYear", "LeapYear.Business\LeapYear.csproj", "{6C533A39-16D8-4A47-9995-2F8296303D9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYear.Test", "LeapYear.Test\LeapYear.Test.csproj", "{06672007-2566-4BA7-B6FB-444E428690E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeapYear.Test", "LeapYear.Test\LeapYear.Test.csproj", "{06672007-2566-4BA7-B6FB-444E428690E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
