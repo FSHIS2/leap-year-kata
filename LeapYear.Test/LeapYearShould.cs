@@ -11,6 +11,8 @@ namespace LeapYear.Test {
 
         [TestCase(400)]
         [TestCase(2000)]
+        [TestCase(2008)]
+        [TestCase(2012)]
         public void say_that_numbers_divisible_by_400_are_leap_years(int input) {
             var year = input;
 
@@ -35,6 +37,15 @@ namespace LeapYear.Test {
             var isLeapYear = LeapYear.IsLeap(year);
 
             isLeapYear.Should().BeFalse();
+        }
+
+        [Test]
+        public void say_that_2008_is_leap_year() {
+            var year = 2008;
+
+            var isLeapYear = LeapYear.IsLeap(year);
+
+            isLeapYear.Should().BeTrue();
         }
 
     }
