@@ -46,5 +46,14 @@ namespace LeapYear.Test {
             isLeapYear.Should().BeTrue();
         }
 
+        [Test]
+        public void say_that_2017_is_not_leap_year() {
+            var year = 2017;
+
+            var isLeapYear = LeapYear.IsLeap(year);
+
+            isLeapYear.Should().BeFalse();
+        }
+
     }
 }
