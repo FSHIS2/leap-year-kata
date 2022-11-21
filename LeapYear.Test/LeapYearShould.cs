@@ -11,8 +11,6 @@ namespace LeapYear.Test {
 
         [TestCase(400)]
         [TestCase(2000)]
-        [TestCase(2008)]
-        [TestCase(2012)]
         public void say_that_numbers_divisible_by_400_are_leap_years(int input) {
             var year = input;
 
