@@ -11,7 +11,10 @@ namespace LeapYear.Test {
 
         [TestCase(400)]
         [TestCase(2000)]
-        public void say_that_numbers_divisible_by_400_are_leap_years(int input) {
+        [TestCase(2008)]
+        [TestCase(2012)]
+        [TestCase(2016)]
+        public void say_that_are_leap_years(int input) {
             var year = input;
 
             var isLeapYear = LeapYear.IsLeap(year);
@@ -19,36 +22,15 @@ namespace LeapYear.Test {
             isLeapYear.Should().BeTrue();
         }
 
-        [Test]
-        public void say_that_1700_is_not_leap_year() {
-            var year = 1700;
-
-            var isLeapYear = LeapYear.IsLeap(year);
-
-            isLeapYear.Should().BeFalse();
-        }
-
-        [Test]
-        public void say_that_1800_is_not_leap_year() {
-            var year = 1800;
-
-            var isLeapYear = LeapYear.IsLeap(year);
-
-            isLeapYear.Should().BeFalse();
-        }
-
-        [Test]
-        public void say_that_2008_is_leap_year() {
-            var year = 2008;
-
-            var isLeapYear = LeapYear.IsLeap(year);
-
-            isLeapYear.Should().BeTrue();
-        }
-
-        [Test]
-        public void say_that_2017_is_not_leap_year() {
-            var year = 2017;
+        [TestCase(1700)]
+        [TestCase(1800)]
+        [TestCase(1900)]
+        [TestCase(2017)]
+        [TestCase(2018)]
+        [TestCase(2019)]
+        [TestCase(2100)]
+        public void say_that_are_not_leap_years(int input) {
+            var year = input;
 
             var isLeapYear = LeapYear.IsLeap(year);
 
